@@ -35,12 +35,55 @@ padding: 2px;
   body {
    background-color: #ffe9ff;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    }
+
+    .container {
+        width: 1440px;
+        margin: 0 auto 1.5rem;
+
+    }
 
 
+.menu-buttons {
+text-decoration: none !important;
+}
+
+.navigation-buttons {
+    text-align: center;
+}
+
+#formRegistro input.textbutton {
+border-radius: 15px;
+border: solid 2px #feaab5;
+padding: 5px 10px;
+background-color: #fff;
+color: #f284b9;
 }
 
 
-</style>
+#formRegistro input.datebutton {
+    border-radius: 15px;
+    border: solid 2px #feaab5;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #f284b9;
+    }
+
+    #formRegistro select.selectbutton {
+    border-radius: 15px;
+    border: solid 2px #feaab5;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #f284b9;
+    }
+
+    #formRegistro label {
+        color:#f284b9;
+        font-weight: bold;
+    }
+
+    </style>
 
 
 
@@ -50,56 +93,56 @@ padding: 2px;
 
     <center><img src="https://i.postimg.cc/W1Bdx5Nn/1056050.png" alt="freeCodeCamp" /></center>
 
-<nav>
-<ul>
-    <a href="index.html"> <img src="Imagens/Menu/Início.png" /></a>
-    <a href="index.html"> <img src="Imagens/Menu/Sobre.png" /> </a>
-    <a href="index.html"> <img src="Imagens/Menu/Contato.png" /> </a>
+<nav class="container navigation-buttons">
 
-</ul>
+    <a href="index.html" class="menu-buttons"> <img src="Imagens/Menu/Início.png" /></a>
+    <a href="index.html" class="menu-buttons"> <img src="Imagens/Menu/Sobre.png" /> </a>
+    <a href="index.html" class="menu-buttons"> <img src="Imagens/Menu/Contato.png" /> </a>
+
+
 </nav>
-</section>
 
 
-<hr />
+<section class="container">
+    <hr />
 
     <!-- PARÁGRAFOS -->
     <img src="https://i.postimg.cc/W1dr8KN4/Aplicativo.png" alt="freeCodeCamp" />
-<p>O Love Alarm é um aplicativo de celular com tecnologia disruptiva e funciona como um "<strong>detector de crushs</strong>".
+<p>O Love Alarm é um aplicativo de celular com tecnologia disruptiva e funciona como um "<span style="color:#f284b9; font-weight: bold;">detector de crushs</span>".
     <br />
      Seu usuário é notificado toda vez que alguém que gosta dele está próximo, dentro de um raio de 10 metros de distância, contanto que essa pessoa também seja usuária do Love Alarm.</p>  
 
-<br />
-<hr />
-<br />
+</section>
 
 
+<section class="container">
+    <hr />
 <!-- FORMULÁRIOS -->
 <img src="https://i.postimg.cc/hjXTy5bs/Cadastro.png" alt="freeCodeCamp" />
-<form action="form.php" method="POST">
+<form id="formRegistro" action="form.php" method="POST">
 <div>
    <label>Primeiro Nome</label>
-    <input type="text" placeholder="Exemplo: Ana" />
+    <input class="textbutton" type="text" placeholder="Exemplo: Ana" />
 </div>
 
 <div>
         <label>Segundo Nome</label>
-    <input type="text" placeholder="Exemplo: Silva" />
+    <input class="textbutton" type="text" placeholder="Exemplo: Silva" />
 </div>
 
 <div>
     <label>Email:</label>
-    <input type="text" placeholder="Exemplo: anasilva@gmail.com" />
+    <input class="textbutton" type="text" placeholder="Exemplo: anasilva@gmail.com" />
 </div>
 
 <div>
     <label>Data de Nascimento:</label>
-    <input type="date" />
+    <input class="datebutton" type="date" />
 </div>
 
 <div>
     <label>Por onde você encontrou o Love Alarm?</label>
-    <select>
+    <select class="selectbutton" >
         <option value="Redes Sociais">Redes Sociais</option>
         <option value="Indicação de amigos">Indicação de amigos</option>
         <option value="Outdoor">Outdoor</option>    
@@ -108,14 +151,13 @@ padding: 2px;
 
 <div>
     <label>Senha:</label>
-    <input type="password" />
+    <input class="textbutton" type="password" />
 
-    <br />
     <!-- BOTÕES -->
     <div><button class="button">Finalizar Cadastro</button>
 </div>
 
-<br />
+</section>
 
 <footer class="main-footer">
 <p>&copy; LOVEALARM - 2022</p>
